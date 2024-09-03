@@ -29,7 +29,7 @@ try {
 }
 
 try {
-    $currentPnpmVersion = (cmd /c "pnpm -v").Trim()
+    $currentPnpmVersion = pnpm -v
 } catch {
     Write-Error "Failed to get the current pnpm version."
     $currentPnpmVersion = "Unknown"
